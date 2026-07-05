@@ -78,7 +78,7 @@ Me encuentro en **constante aprendizaje**, buscando refinar mis habilidades téc
 
 Estoy entusiasmado por aportar valor en un equipo de datos y seguir creciendo profesionalmente. Si quieres conocer más sobre mi trabajo o discutir una oportunidad laboral, puedes contactarme a través de:
 
-* **LinkedIn:** [Tu Nombre y Apellido]([https://linkedin.com/in/tu-usuario](https://ar.linkedin.com/in/carola-donad%C3%ADo))
+* **LinkedIn:** [Carola Donadío]([https://linkedin.com/in/tu-usuario](https://ar.linkedin.com/in/carola-donad%C3%ADo))
 
 ---
 ¡Gracias por visitar mi portafolio! Te invito a explorar las carpetas de los proyectos para ver los reportes interactivos y el código detrás de ellos.
