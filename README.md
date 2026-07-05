@@ -31,19 +31,19 @@ Todos los proyectos listados a continuación han sido desarrollados siguiendo ri
 * **Descripción:** Desarrollo de un cuadro de mando interactivo para consolidar y visualizar indicadores de alto nivel sobre el rendimiento comercial y de productos.
 * **Áreas de Análisis:** Monitoreo de Ventas Totales, Utilidad Neta y Porcentaje de Margen de Ganancia. Desglose granular por jerarquías de producto (categorías, subcategorías, etiquetas) y comparación anual de canales de venta (Online vs. Tienda física).
 * **Herramientas:** `Power BI`, `Excel`, Análisis de Tendencias Históricas.
-* **📂 [Ver detalles del proyecto](./Project%20%235%3A%20Description)**
+* **📂 [Ver detalles del proyecto](https://github.com/CarolaDonadio/data_analysis_projects/tree/master/Dashboard%20%235%20de%20M%C3%A9tricas%20Calves%20de%20Merx)**
 
 ### 💰 3. Dashboard Financiero - Dizteku
 * **Descripción:** Cuadro de mando financiero interactivo enfocado en el control económico en tiempo real para la planificación estratégica y toma de decisiones.
 * **Áreas de Análisis:** Flujo y monitoreo de Ingresos Totales, desglose de Gastos Operativos (fijos y variables), cálculo de Utilidad Neta y evolución mensual del Porcentaje de Margen de Beneficio.
 * **Herramientas:** `Power BI`, `Power Query`, `DAX`.
-* **📂 [Ver detalles del proyecto](./Project%20%237%3A%20Description)**
+* **📂 [Ver detalles del proyecto](https://github.com/CarolaDonadio/data_analysis_projects/tree/master/Dizteku%20Financial%20Dashboard)**
 
 ### 🟣 4. Reporte Analítico de Métricas en Twitch
 * **Descripción:** Análisis enfocado en el rendimiento y popularidad de los videojuegos dentro de la plataforma de streaming, identificando patrones de consumo de la audiencia.
 * **Áreas de Análisis:** Métricas generales de transmisión (horas vistas, interacciones, streams totales) y análisis analítico de la audiencia promedio segmentada por intervalos de tiempo para optimizar horarios de transmisión.
 * **Herramientas:** `Power BI`, `DAX`, Modelado de datos.
-* **📂 [Ver detalles del proyecto](./Project%20%238%3A%20Description)**
+* **📂 [Ver detalles del proyecto](https://github.com/CarolaDonadio/data_analysis_projects/tree/master/Metricas%20Twitch%20-%20Power%20BI)**
 
 ### 📊 5. Análisis Comparativo de Ingresos Anuales
 * **Descripción:** Análisis exhaustivo para evaluar el crecimiento o decrecimiento de los ingresos de la empresa en comparación directa con periodos anteriores.
@@ -55,13 +55,13 @@ Todos los proyectos listados a continuación han sido desarrollados siguiendo ri
 * **Descripción:** Reporte orientado al control de personal y métricas de talento humano utilizando analítica descriptiva.
 * **Áreas de Análisis:** Cálculo del total de colaboradores, índice de empleados activos vs. inactivos (rotación) utilizando medidas explícitas en DAX y paneles de filtrado dinámico. Visualización interactiva con mapas, selectores y gráficos de distribución.
 * **Herramientas:** `Power BI`, `DAX`.
-* **📂 [Ver detalles del proyecto](./Project%20%234%3A%20Description)**
+* **📂 [Ver detalles del proyecto](https://github.com/CarolaDonadio/data_analysis_projects/tree/master/Clustered%20HR%20Dashboard)**
 
 ### 🍏 7. Reporte de Rendimiento Comercial - Appol (Caso de Estudio)
 * **Descripción:** Solución analítica interactiva diseñada para el equipo directivo de Appol con el fin de evaluar el rendimiento histórico de sus ingresos y gastos (Periodo 2019-2021).
 * **Áreas de Análisis:** Creación y modelado de indicadores críticos de negocio como Profit (Utilidad) y Margin % (Porcentaje de Margen de Ganancia) distribuidos por categorías de producto y regiones geográficas.
 * **Herramientas:** `Power BI`, `Power Query`, `DAX`.
-* **📂 [Ver detalles del proyecto](./Project%20%233%3A%20Description)**
+* **📂 [Ver detalles del proyecto](https://github.com/CarolaDonadio/data_analysis_projects/tree/master/Proyecto%20%233%20-%20Dashboard%20Appol)**
 
 ---
 
