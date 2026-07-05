@@ -26,8 +26,7 @@ Todos los proyectos listados a continuación han sido desarrollados siguiendo ri
 * **Descripción:** Análisis exhaustivo de las ventas globales de la industria de videojuegos para descubrir patrones, tendencias temporales y evaluar el impacto de variables clave.
 * **Áreas de Análisis:** Ventas totales anuales, distribución geográfica (Norteamérica, Europa, Japón, Resto del Mundo), impacto por plataformas tecnológicas y dominancia de géneros y publishers en el mercado.
 * **Herramientas:** `Power BI`, `Excel`, Técnicas Estadísticas.
-* **📂 [Ver detalles del proyecto](./Project%20%231%3A%20Description)** *(Ajusta la ruta si es necesario)*
-
+* **📂 [Ver detalles del proyecto](https://github.com/CarolaDonadio/data_analysis_projects/tree/master/Hist%C3%B3rico%20de%20Ventas%20de%20Videojuegos%20(Per%C3%ADodo%201980%20-%202017))**
 ### 📈 2. Dashboard de Métricas Clave - Merx
 * **Descripción:** Desarrollo de un cuadro de mando interactivo para consolidar y visualizar indicadores de alto nivel sobre el rendimiento comercial y de productos.
 * **Áreas de Análisis:** Monitoreo de Ventas Totales, Utilidad Neta y Porcentaje de Margen de Ganancia. Desglose granular por jerarquías de producto (categorías, subcategorías, etiquetas) y comparación anual de canales de venta (Online vs. Tienda física).
