@@ -77,7 +77,7 @@ Me encuentro en **constante aprendizaje**, buscando refinar mis habilidades téc
 
 Estoy entusiasmado por aportar valor en un equipo de datos y seguir creciendo profesionalmente. Si quieres conocer más sobre mi trabajo o discutir una oportunidad laboral, puedes contactarme a través de:
 
-* **LinkedIn:** [Carola Donadío]([https://ar.linkedin.com/in/carola-donad%C3%ADo])
+* **LinkedIn:** [Carola Donadío](https://ar.linkedin.com/in/carola-donad%C3%ADo)
 * **🚀 Portafolio en Notion:** [Portfolio | Carola Donadío | Data Analyst 🚀](https://chivalrous-cyclamen-84e.notion.site/Portfolio-Carola-Donad-o-Data-Analyst-3670fd6bf29f4691beebdb23c5e9e57b?pvs=143)
 
 ---
