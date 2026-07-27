@@ -27,10 +27,12 @@ El modelo resuelve la trazabilidad de fondos a través de múltiples cuentas/alm
 ## 📐 Estructura del Libro de Trabajo
 
 El libro está estructurado funcionalmente en 4 pestañas:
+```text
 ├── Tablas       --> Parámetros, maestros de categorías y cuentas/almacenes.
 ├── Movimientos  --> Bitácora general para el registro de transacciones.
 ├── Fórmulas     --> Matriz de cálculo, balance por cuenta y desglose mensual.
 └── Tablero      --> Dashboard interactivo de análisis visual y métricas claves.
+```
 
 ### 1. Pestaña `Tablas`
 Contiene la parametrización del sistema (IDs de movimiento, tipos de categoría y lista de almacenes de dinero).
@@ -110,4 +112,4 @@ Aplica criterios combinados de categoría, año y mes sobre la bitácora de movi
 
 👤 Autora
 * **Carola Donadio**
-* **Estudiante de la Tecnicatura Superior en Ciencia de Datos e IA (Instituto N°57)**
+* Estudiante de la Tecnicatura Superior en Ciencia de Datos e IA (Instituto N°57)
