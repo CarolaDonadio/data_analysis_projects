@@ -57,15 +57,15 @@ Para lograr el dinamismo del sistema se emplearon las siguientes funciones y té
 
 * **`BUSCARX` / `XLOOKUP` + `SI.ERROR` / `IFERROR`:**  
   Trae el nombre del producto desde `tStock` a `tMovimientos` de forma ágil y maneja celdas vacías sin mostrar errores `#N/A`.
-  ```excel
+  ```
   =SI.ERROR(BUSCARX(tMovimientos[[#Esta fila],[Producto]], tStock[IdProducto], tStock[Nombre]), "-")
-excel´´´
+´´´
 
 * **`=SUMAR.SI.CONJUNTO` / `SUMIFS`:**
 Consolida el total acumulado de Entradas y Salidas en la tabla de Stock filtrando por tipo de movimiento e ID de producto.
-```excel
+```
   =SUMAR.SI.CONJUNTO(tMovimientos[Cantidad], tMovimientos[Movimiento], "Entrada", tMovimientos[Producto], tStock[[#Esta fila],[IdProducto]])
-excel´´´
+```
 
 * **Referencias Estructuradas de Tablas:**
 
