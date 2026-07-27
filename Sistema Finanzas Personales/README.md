@@ -62,7 +62,7 @@ Panel de control con selectores dinámicos por período que calcula totales, pro
 El dinamismo del modelo se basa en funciones avanzadas de búsqueda y suma condicional con **referencias de tablas estructuradas**:
 
 * **Determinación de Signo por Categoría (Ingreso vs. Egreso):**
-  ```
+  ```excel
   =SI(
     SI.ERROR(
       BUSCARX(
@@ -75,9 +75,10 @@ El dinamismo del modelo se basa en funciones avanzadas de búsqueda y suma condi
     1, 
     -1
   )
-```
-**Consolidación de Saldos por Almacén / Cuenta:**
-```
+  ```
+
+* **Consolidación de Saldos por Almacén / Cuenta:**
+  ```
   =SUMAR.SI.CONJUNTO(
     tMovimientos[Valor], 
     tMovimientos[Almacén], 
@@ -93,9 +94,7 @@ El dinamismo del modelo se basa en funciones avanzadas de búsqueda y suma condi
     tMovimientos[Categoría Tabla Movimientos], 
     -1
   )
-```
-
----
+  ```
 
 **Desglose Mensual por Categoría (SUMAR.SI.CONJUNTO con filtrado por fecha):**
 Aplica criterios combinados de categoría, año y mes sobre la bitácora de movimientos para poblar la matriz del presupuesto.
