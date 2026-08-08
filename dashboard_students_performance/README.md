@@ -10,7 +10,7 @@ El objetivo principal fue transformar un conjunto de datos crudos e inconsistent
 
 ---
 
-## 🧹 Proceso de Limpieza y Preparación de Datos (Data Preparation)
+## 🧹 Proceso de Limpieza y Preparación de Datos (Data Cleaning & Preparation)
 
 El 80% del esfuerzo del proyecto se enfocó en garantizar la calidad e integridad de los datos antes del modelado visual:
 
@@ -50,4 +50,4 @@ El 80% del esfuerzo del proyecto se enfocó en garantizar la calidad e integrida
 * **Excel:** Limpieza, transformación de datos, tablas dinámicas y diseño del Dashboard.
 
 👤 Autor
-[![LinkedIn](https://www.linkedin.com/in/carola-donad%C3%ADo/)
+* 🔗 **LinkedIn:** [Carola Donadío](https://www.linkedin.com/in/carola-donad%C3%ADo/)
