@@ -27,9 +27,9 @@ El 80% del esfuerzo del proyecto se enfocó en garantizar la calidad e integrida
 ## 📈 Estructura del Dashboard y Métrica Clave
 
 ### 1. Tarjetas de KPIs Principales
-* **Total Estudiantes:** Conteo único de alumnos analizados ($N = 923$).
-* **Promedio Nota Final:** Promedio general de calificaciones ($~79.9$).
-* **Asistencia Presencial Promedio:** Tasa de asistencia a clases físicas ($~85.5\%$).
+* **Total Estudiantes:** Conteo único de alumnos analizados.
+* **Promedio Nota Final:** Promedio general de calificaciones.
+* **Asistencia Presencial Promedio:** Tasa de asistencia a clases físicas.
 * **Asistencia Virtual Promedio:** Tasa de participación en clases online.
 * **Horas de Estudio (Semanal vs. Diario):** Seguimiento de la dedicación de tiempo.
 
@@ -46,21 +46,8 @@ El 80% del esfuerzo del proyecto se enfocó en garantizar la calidad e integrida
 
 ---
 
-## 📁 Estructura del Repositorio
-
-```text
-├── data/
-│   ├── raw_student_performance.csv    # Dataset original descargado de Kaggle
-│   └── student_performance_clean.xlsx # Dataset procesado y limpio
-├── dashboard/
-│   └── student_performance_dashboard.xlsx # Libro con Tablas Dinámicas y Dashboard
-├── assets/
-│   └── dashboard_preview.png          # Captura del Dashboard para el README
-└── README.md                          # Documentación del proyecto
-```
-
 ## 🛠️ Herramientas Utilizadas
 * **Excel:** Limpieza, transformación de datos, tablas dinámicas y diseño del Dashboard.
 
 👤 Autor
-[![LinkedIn Badge](https://www.linkedin.com/in/carola-donad%C3%ADo/)
+[![LinkedIn](https://www.linkedin.com/in/carola-donad%C3%ADo/)
