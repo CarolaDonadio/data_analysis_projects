@@ -8,8 +8,6 @@ Este repositorio contiene la solución técnica integral para el procesamiento, 
 
 El proyecto se estructuró en dos capas claramente diferenciadas para garantizar el aislamiento de errores y la integridad analítica:
 
-![Diagrama ER del DW](Modelo-EER-aerolinea-bbdd.PNG)
-
 ```text
 ┌────────────────────────┐      ┌───────────────────────────┐      ┌────────────────────────┐
 │  aerolinea_raw         │      │  Proceso ETL (MySQL)      │      │  aerolinea_dw          │
@@ -21,23 +19,7 @@ El proyecto se estructuró en dos capas claramente diferenciadas para garantizar
 ```
 ### Esquema del Modelo en Estrella (`aerolinea_dw`)
 
-```text
-┌─────────────────┐       1:N       ┌────────────────────────┐
-│    pasajeros    ├─────────────────┤                        │
-│ (id_pasajero)   │                 │                        │
-└─────────────────┘                 │        reservas        │
-│ (Tabla de Hechos/Facts)│
-┌─────────────────┐       1:N       │                        │
-│     vuelos      ├─────────────────┤                        │
-│   (id_vuelo)    │                 └────────────────────────┘
-└────────┬────────┘
-│
-N:1
-┌────────┴────────┐
-│     aviones     │
-│   (id_avion)    │
-└─────────────────┘
-```
+![Diagrama ER del DW](Modelo-EER-aerolinea-bbdd.PNG)
 ---
 
 ## 🛠️ 2. Desafíos Técnicos Resueltos durante el ETL
