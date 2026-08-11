@@ -15,11 +15,33 @@ El proyecto se estructuró en dos capas claramente diferenciadas para garantizar
 │  • raw_vuelos          │      │  • Limpieza de precios    │      │  • pasajeros (Dim)     │
 │  • raw_pasajeros       │      │  • Homologación collation │      │  • vuelos (Dim)        │
 │  • raw_aviones         │      │  • Resolución de FKs      │      │  • aviones (Dim)       │
-└────────────────────────┘      └───────────────────────────┘      └────────────────────────┘
+│  • raw_aeropuertos     │      └───────────────────────────┘      │  • aeropuertos (Dim)   │
+└────────────────────────┘                                         └────────────────────────┘
 ```
 ### Esquema del Modelo en Estrella (`aerolinea_dw`)
 
 ![Diagrama ER del DW](Modelo-EER-aerolinea-bbdd.PNG)
+
+```text
+┌─────────────────┐       1:N       ┌────────────────────────┐
+│    pasajeros    ├─────────────────┤                        │
+│ (id_pasajero)   │                 │                        │
+└─────────────────┘                 │        reservas        │
+│ (Tabla de Hechos/Facts)│
+┌─────────────────┐       1:N       │                        │
+│     vuelos      ├─────────────────┤                        │
+│   (id_vuelo)    │                 └────────────────────────┘
+└────┬───────┬────┘
+│       │
+N:1│       │N:1
+│       └──────────────────────┐
+▼                              ▼
+┌───────────────┐              ┌───────────────┐
+│    aviones    │              │  aeropuertos  │
+│  (id_avion)   │              │ (id_aeropuerto│
+└───────────────┘              └───────────────┘
+```
+
 ---
 
 ## 🛠️ 2. Desafíos Técnicos Resueltos durante el ETL
@@ -28,7 +50,7 @@ Durante la carga masiva de la tabla de hechos `reservas`, se aplicaron técnicas
 
 1. **Resolución de Mapeo de Atributos (`Error 1054`)**:
    * **Desafío**: Discordancia entre los nombres de los identificadores de negocio en las tablas operacionales y las claves primarias/secundarias del DW.
-   * **Solución**: Mapeo dinámico cruzando `raw_reservas.id_pasajero_raw` contra `pasajeros.codigo_pasajero` y `pasajeros.id_pasajero`.
+   * **Solución**: Mapeo dinámico cruzando `raw_reservas.id_pasajero_raw` contra `pasajeros.codigo_pasajero` e `id_pasajero`.
 
 2. **Homologación de Colaciones (`Error 1267`)**:
    * **Desafío**: Incompatibilidad al cruzar columnas con cotejamientos distintos (`utf8mb4_unicode_ci` vs `utf8mb4_0900_ai_ci`).
@@ -119,19 +141,21 @@ SET FOREIGN_KEY_CHECKS = 1;
 
 ## 📊 4. Consultas Analíticas de Negocio
 Consulta 1: Rendimiento Comercial e Ingresos por Ruta Aérea
-Evalúa la facturación total y el ticket promedio por cada par origen-destino.
+Evalúa la facturación total y el ticket promedio relacionando las tablas de reservas, vuelos y la dimensión aeropuertos.
 
 ```sql
 USE aerolinea_dw;
 
 SELECT 
-    CONCAT(v.origen_iata, ' -> ', v.destino_iata) AS ruta,
+    CONCAT(a_orig.codigo_iata, ' (', a_orig.ciudad, ') -> ', a_dest.codigo_iata, ' (', a_dest.ciudad, ')') AS ruta,
     COUNT(r.id_reserva) AS total_reservas,
     COALESCE(SUM(r.precio_pagado), 0) AS ingresos_totales,
     COALESCE(ROUND(AVG(r.precio_pagado), 2), 0) AS ticket_promedio
 FROM aerolinea_dw.reservas r
 INNER JOIN aerolinea_dw.vuelos v ON r.id_vuelo = v.id_vuelo
-GROUP BY v.origen_iata, v.destino_iata
+INNER JOIN aerolinea_dw.aeropuertos a_orig ON v.id_aeropuerto_origen = a_orig.id_aeropuerto
+INNER JOIN aerolinea_dw.aeropuertos a_dest ON v.id_aeropuerto_destino = a_dest.id_aeropuerto
+GROUP BY a_orig.codigo_iata, a_orig.ciudad, a_dest.codigo_iata, a_dest.ciudad
 ORDER BY ingresos_totales DESC;
 ```
 
