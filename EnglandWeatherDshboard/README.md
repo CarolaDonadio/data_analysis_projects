@@ -23,9 +23,9 @@ El dashboard fue estructurado con un enfoque visual limpio y jerárquico, diseñ
 
 ### 🎯 1. Sección de Tarjetas KPI (Indicadores Clave)
 Ubicadas en la parte superior para ofrecer un resumen ejecutivo instantáneo:
-- **Temperatura Promedio Global ($\approx 11.9\text{ °C}$):** Marca la línea base del clima templado oceánico de Inglaterra.
-- **Valores Extremos (Máx $39.9\text{ °C}$ / Mín $-21.8\text{ °C}$):** Permiten identificar de inmediato la amplitud térmica registrada a lo largo de la década.
-- **Humedad Promedio ($\approx 73.5\%$):** Refleja la alta presencia constante de humedad relativa típica de la región.
+- **Temperatura Promedio Global:** Marca la línea base del clima templado oceánico de Inglaterra.
+- **Valores Extremos:** Permiten identificar de inmediato la amplitud térmica registrada a lo largo de la década.
+- **Humedad Promedio:** Refleja la alta presencia constante de humedad relativa típica de la región.
 - **Velocidad del Viento Promedio:** Establece la intensidad media de las corrientes eólicas.
 
 ---
